@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: #03101A;
+    color: #fff;
+}
+
+/*Neve*/
+/* .snow1{
+    background: url('../img/Neve/type_1.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateOne 10s infinite linear;
+} */
+.snow2{
+    background: url('../img/Neve/type_1.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 4220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateTwo 10s infinite linear;
+    background-size: 300px;
+    filter: blur(1px);
+}
+.snow3{
+    background: url('../img/Neve/type_1.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 4220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: animateThree 15s infinite linear;
+    background-size: 800px;
+    filter: blur(3px);
+}
+
+@keyframes animateOne
+{
+    0%
+    {
+        background-position: 0px 0px
+    }
+    100%
+    {
+        background-position: 100px 650px
+    }
+}
+@keyframes animateTwo
+{
+    0%
+    {
+        background-position: 0px -100px
+    }
+    100%
+    {
+        background-position: 0px 650px
+    }
+}
+@keyframes animateThree
+{
+    0%
+    {
+        background-position: 0px 100px
+    }
+    100%
+    {
+        background-position: 300px 650px
+    }
+}
+
+/*Cabeçalho: Tela inicial*/
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/Capa.png');
+    background-size: cover;
+
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*align-items: flex-start;
+    justify-content: flex-start;  */
+}
+
+nav a{   
+    /* width: 150px;  */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; 
+
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 22px;
+
+    border: 2px solid #041C32;
+    border-radius: 20px;
+
+    /* margin-right: 100px; */
+
+    background-color: black;
+    color: #fff;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 24px;
+
+    position: relative;
+    z-index: 1;
+}
+
+nav a:hover{
+    background-color: #002C3A;
+    box-shadow: 5px 5px 8px #EEE;
+    color: white;
+}
+
+header div{
+    padding-top: 38vh;
+}
+
+
+.font_text1{
+    font-family: 'Cinzel', serif;
+    /* font-family: 'MedievalSharp', cursive; */
+}
+
+.font_text2{
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'MedievalSharp', cursive;
+}
+
+/*Tela Resumo*/
+#sobre{
+    /* display: flex; */
+    margin: 90px 60px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#sobre img{    
+    float: left;
+    width: 320px;
+    height: 516px;
+
+    margin-right: 80px;
+}
+
+#sobre p{
+    margin-bottom: 25px;
+}
+
+#cont_btn{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_1{
+    display: inline;
+    width: 150px;
+    height: 30px;
+
+    padding: 10px 22px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.btn_1 a{
+    text-decoration: none;
+    color: black;
+
+    position: relative;
+    z-index: 1;
+}
+.btn_1 a:hover{
+    color: #1597BB;
+}
+
+/*Tela Skils*/
+#skils{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('../img/Muralha_full.png');
+    background-size: cover;
+
+    padding-top: 135px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.btn_2{
+    display: inline;
+    width: 150px;
+    height: 30px;
+
+    padding: 16px 28px;
+
+    background-color: #03101A;
+    color:#fff;
+    font-size: 18px;
+    border: 3px solid #000AFF;
+    border-radius: 50px;
+
+    position: relative;
+    z-index: 1;
+
+    margin: 10px 20px 20px 20px;
+}
+
+#skils div{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Tela Projetos online*/
+#proj{
+    margin-top: 80px;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+
+    text-align: center;
+    font-size: 24px;
+}
+/*Projetos Lado Esquerdo*/
+.Portif_L{
+    display: flex;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .Portif_L #Reverso{
+    display: flex;
+    margin-bottom: 8rem;
+    flex-wrap: wrap;  
+    justify-content: center;
+    align-items: center;
+} */
+
+.fake{
+    /* width: 392px;
+    height: 181px; */
+    width: 25%;
+    height: 25%;
+
+    background-color: grey;
+    border-radius: 5px;
+    border: 1px solid rgb(226, 221, 217); 
+    margin: auto;
+    /* float: left;  */
+
+    position: relative;
+    z-index: 1;
+}
+
+/* .Portif_L img{
+    width: 100vw; 
+    height: 231px;
+
+    border-radius: 5px;
+
+    position: relative;
+    z-index: 1;
+} */
+
+@media screen and ( max-width: 1040px) {
+    .fake{
+        width: 95%;
+    }
+    #Reverso{
+        flex-direction: column;
+    }
+    
+
+}
+
+@media screen and (max-width: 416px){
+    .snow2{
+        height: 1070%;
+    }
+    .snow3{
+        height: 1140%;
+    } 
+}
+
+@media screen and (max-width: 912px){
+    .snow2{
+        height: 563%;
+    }
+    .snow3{
+        height: 563%;
+    }
+}
+#proj div.Portif_L div.desc div.btn_1{
+    /* float: right; */
+
+    display: flex;
+    width: 150px;
+    height: 30px;
+
+    padding: 16px 28px;
+    margin-top: 25px;
+    
+    /*margin-right: 25px;
+    margin-left: 25px;*/
+
+    background-color: #fff;
+    color: black;
+    font-size: 28px;
+    border-radius: 50px;
+}
+
+/* #Reverso{
+    flex-direction: row-reverse;
+} */
+
+.desc .btn_1 a:hover{
+    color: #1597BB;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 800px;
+    margin: auto;
+}
+
+/*Projetos Lado Direito*/
+ .Portif_R{
+    display: flex;
+} 
+
+/*Contatos*/
+#contato{
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/Noite.png");
+    background-size: cover;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:750px) {
+
+    #contato{
+        background-position: right;
+    }
+    #contato h1{
+        font-size: 32px;
+        text-shadow: 5px 1px black;
+    }
+    #contato #text{
+        width: 90%;
+        margin-inline: auto;
+        text-shadow: 2px 1px black;
+    }
+    #contato #text p{
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+    #skils div{
+        margin-top: 10px;
+    }
+
+    #cont_btn {
+
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+#text{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 2rem;
+    margin-right: 5rem;
+
+    /* display: flex; */
+
+    /* align-items: flex-end;
+    justify-content: flex-end; */
+
+    font-size: 32px;
+}
+
+#text p{
+    margin-bottom: 6rem;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icone{
+    width: 35px;
+    height: 35px;
+    display: flex;
+
+    font-size: 20px;
+    
+    margin-bottom: 2rem;
+    margin-right: 50px;
+    margin-left: 5vw;
+
+}
+
+.icone a{
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+
+    margin-top: 7.5px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.icone a:hover{
+    color: #1597BB;
+}
+
+/*Rodapé*/
+footer{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+
+    font-size: 30px;
+
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    position: absolute;
+
+    z-index: 1;
+}
+
+footer a{
+    font-family: 'MedievalSharp', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: #1597BB;
+}
