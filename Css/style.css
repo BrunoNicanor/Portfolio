@@ -258,13 +258,13 @@ header div{
     align-items: center;
 }
 
-/* .Portif_L #Reverso{
+.Portif_L #Reverso{
     display: flex;
     margin-bottom: 8rem;
     flex-wrap: wrap;  
     justify-content: center;
     align-items: center;
-} */
+}
 
 .fake{
     /* width: 392px;
@@ -339,9 +339,9 @@ header div{
     border-radius: 50px;
 }
 
-/* #Reverso{
+#Reverso{
     flex-direction: row-reverse;
-} */
+}
 
 .desc .btn_1 a:hover{
     color: #1597BB;
