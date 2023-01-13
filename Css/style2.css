@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: #03101A;
+    color: #fff;
+}
+main{
+    background: url(../img/Rei\ da\ noite.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main h1{
+    padding-top: 38vh;
+    font-size: 45px;
+}
+
+footer{
+    background-color: black;
+
+    width: 100%;
+    height: 8vh;
+    display: flex;
+
+    font-size: 30px;
+
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    position: absolute;
+
+    z-index: 1;
+}
+
+footer a{
+    font-family: 'MedievalSharp', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: #1597BB;
+}

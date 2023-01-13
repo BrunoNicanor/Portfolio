@@ -19,7 +19,7 @@ body{
     left: 0;
     animation: animateOne 10s infinite linear;
 } */
-.snow2{
+/* .snow2{
     background: url('../img/Neve/type_1.png');
     background-repeat: repeat;
     width: 100%;
@@ -42,7 +42,7 @@ body{
     animation: animateThree 15s infinite linear;
     background-size: 800px;
     filter: blur(3px);
-}
+} */
 
 @keyframes animateOne
 {
@@ -124,9 +124,10 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #002C3A;
-    box-shadow: 5px 5px 8px #EEE;
-    color: white;
+    /* background-color: #EEE;*/
+    box-shadow: 2px 2px 4px #03101A;
+    border-color: #041C32; 
+    color: #1597BB;
 }
 
 header div{
